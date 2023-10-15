@@ -16,4 +16,42 @@ public interface Drivable {
     public float getSpeed();   
     public String getMake();    
     public String getType();
+    
+    public class Tracter extends Vehicle implements Drivable{
+        public Tracter(String make,String type, int numPassangers){
+            this.make = make;
+            this.type = type;
+            this.numPassengers = numPassengers;
+            numWheels = 4;
+        }
+     @Override
+     public void accelerate(float speed){
+         
+     }
+     @Override 
+     public void brake(){
+         
+     }
+     @Override
+     public void turn(float angle){
+         
+     }
+     @Override
+     public float getDirection(){
+         return direction;
+     }
+     @Override 
+     public float getSpeed(){
+         return speed;
+     }
+     @Override
+     public String getMake(){
+         return make;
+         
+     }
+     @Override
+     public String getType(){
+         return type;
+     }
+    }
 }

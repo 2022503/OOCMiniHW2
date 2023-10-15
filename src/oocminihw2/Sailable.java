@@ -14,4 +14,36 @@ public interface Sailable {
     public void lowerSail();
     public boolean isSailHoisted();
     public void landHo();
+    
+    public class Sailboat extends Vehicle implements Sailable{
+        public Sailboat (String make,String type, int numPassangers){
+            this.make = make;
+            this.type = type;
+            this.numPassengers = numPassengers;
+            numSails = 2;
+        }
+        
+
+     
+   
+    @Override
+    public void landHo(){
+        
+    }
+
+        @Override
+        public void hoistSail() {
+      
+        }
+
+        @Override
+        public void lowerSail() {
+      
+        }
+
+        @Override
+        public boolean isSailHoisted() {
+            return true;
+        }
+    }     
 }
